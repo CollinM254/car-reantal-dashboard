@@ -1,0 +1,114 @@
+.driverStatus_table {
+  width: 100%;
+  border-collapse: collapse;
+  .row_heading {
+    border-bottom: 1px solid rgba(163, 163, 163, 0.25);
+    gap: 36px;
+    th {
+      padding: 13px;
+      text-align: start;
+      font-weight: 300;
+      font-size: 0.875rem;
+      color: #656575;
+    }
+  }
+
+  .row_mainContent {
+    td {
+      padding: 10px 0;
+      padding-left: 13px;
+    }
+    .number {
+      text-align: start;
+      font-weight: 400;
+      font-size: 0.75rem;
+    }
+    .carNumber {
+      span {
+        text-align: start;
+        font-weight: 400;
+        font-size: 0.875rem;
+        padding: 4px 12px;
+        background-color: rgba(153, 153, 153, 0.1);
+        border-radius: 4px;
+      }
+    }
+    .driverName {
+      text-align: start;
+      font-weight: 400;
+      img {
+        position: relative;
+        top: 7px;
+        margin-right: 12px;
+      }
+    }
+    .status_Completed {
+      text-align: start;
+      font-weight: 300;
+      font-size: 1rem;
+      color: #656575;
+      &::before {
+        content: "";
+
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+
+        background-color: #52c93f;
+        margin-right: 18px;
+      }
+    }
+    .status_In_route {
+      text-align: start;
+      font-weight: 300;
+      font-size: 1rem;
+      color: #656575;
+      &::before {
+        content: "";
+
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+
+        background-color: #ff2727;
+        margin-right: 18px;
+      }
+    }
+    .status_Pending {
+      text-align: start;
+      font-weight: 300;
+      font-size: 1rem;
+      color: #656575;
+      &::before {
+        content: "";
+
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+
+        background-color: #006aff;
+        margin-right: 18px;
+      }
+    }
+    .earning {
+      text-align: start;
+      font-weight: 300;
+      font-size: 1rem;
+      color: #656575;
+    }
+    button {
+      position: relative;
+      top: 10px;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #ffffff;
+      padding: 4px 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #006aff;
+    }
+  }
+}

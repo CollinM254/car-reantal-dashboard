@@ -1,0 +1,58 @@
+@mixin coloredInterFont($font-weight, $font-size, $color: #000000) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+}
+
+.dailyStatistic {
+  background-color: white;
+  padding: 24px;
+
+  &_heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(163, 163, 163, 0.2);
+
+    h3 {
+      @include coloredInterFont(500, 1.125rem, #656575);
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      @include coloredInterFont(400, 0.75rem, #656575);
+      padding: 4px 8px;
+      background: #f4f5f7;
+      border-radius: 2px;
+    }
+  }
+  &_value {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    h2 {
+      @include coloredInterFont(700, 1.75rem);
+      margin: 12px 0 8px 0;
+    }
+    .increase {
+      @include coloredInterFont(500, 1rem, #52c93f);
+      margin: 0;
+    }
+    .decrease {
+      @include coloredInterFont(500, 1rem, #ff2727);
+      margin: 0;
+    }
+  }
+  small {
+    @include coloredInterFont(300, 0.875rem, #656575);
+  }
+  .lastWeek {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    p {
+      @include coloredInterFont(500, 0.875rem, #525256);
+    }
+  }
+}

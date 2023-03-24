@@ -1,0 +1,48 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-weight: 400;
+    margin: 0;
+  }
+  .desc_Hired {
+    &::before {
+      content: "";
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-right: 12px;
+      border-radius: 16px;
+      width: 16px;
+      height: 16px;
+      background-color: #006aff;
+    }
+  }
+  .desc_Canceled {
+    &::before {
+      content: "";
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-right: 12px;
+      border-radius: 16px;
+      width: 16px;
+      height: 16px;
+      background-color: #52c93f;
+    }
+  }
+  .desc_Pending {
+    &::before {
+      content: "";
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-right: 12px;
+      border-radius: 16px;
+      width: 16px;
+      height: 16px;
+      background-color: #ff2727;
+    }
+  }
+}
